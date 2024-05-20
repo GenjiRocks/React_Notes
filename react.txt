@@ -66,12 +66,16 @@ Creating a React Application:
 
 Files Explaination:
 
- -README.md - Summarised project description
- -package.json - npm configurations
+ 1,README.md - Summarised project description
+ 2,package.json - npm configurations
         Dependencies include the Libraries required for the project(installed)
         npm start - "react-scripts start" command inside the scripts object
 
- -package-lock.json - it holds the library versions
+ 3,package-lock.json - it holds the library versions
+ 4,node_modules folder : entire copy of the installed Libraries
+ 5,.gitignore - ignore the contents to be pushed to github
+ 6,public folder : Files that can be accessed throughout the application
+        -index.html is the only file that run in the browser
 
 ___________________________________________________________________________________
 

@@ -1,0 +1,79 @@
+___________________________________________________________________________________
+
+20/05
+___________________________________________________________________________________
+
+REACT
+-----
+
+- React is a open source web application
+- Developed and maintained by Meta
+- The language used in JSX
+
+Features:
+- Used for creating UI
+- Its a Library
+- Its a single page applications which conencts with index.html (only this page gets loaded)
+- all other pages should have direct or indirect connection with the index.html
+- Declarative Application 
+  (does not access real DOM)
+
+-Virtual DOM
+    Its a copy of real DOM
+    Created by REACT
+    Diffing
+    -------
+        - the process of comparing the virtual DOM with the real DOM
+
+    Recounciliation
+    --------------
+        - process of updating the real dom after comparing it with the virtual DOM
+
+
+Pure function: the data that comes as the arguments of the function should only come in the output.
+-------------
+- output should only depend upon arguments
+function function_name(){
+    js code
+
+ 
+    return(){  this is the output of the function gets displayed on browser
+        jsx display
+    }
+}
+
+
+Transpiling: 
+------------
+    - Conversion of jsx into browser understanding language
+    - the package used is (babel)
+
+Data Sharing:
+-------------
+    - uni-directional : Parent to Child
+    - props : pre-defined object used for data sharing between Parent and Child
+
+
+Creating a React Application:
+    -npx - Node Package Executer
+    -npm - Node Package Manager
+
+    - if error npm i -g npm (to make it global)
+
+    - npx create-react-app demo
+    -cd demo (to into the project directory)
+    -npm start (start the app)
+
+Files Explaination:
+
+ -README.md - Summarised project description
+ -package.json - npm configurations
+        Dependencies include the Libraries required for the project(installed)
+        npm start - "react-scripts start" command inside the scripts object
+
+ -package-lock.json - it holds the library versions
+
+___________________________________________________________________________________
+
+21/05
+___________________________________________________________________________________

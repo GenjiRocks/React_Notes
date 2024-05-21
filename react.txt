@@ -88,7 +88,7 @@ WebVitals() in index.js - used for checking the performance
 Component:
 ---------
 - Component is the basic unit of UI
-- Component nams should start with Capital Letter
+- Component names should start with Capital Letter
 - with extension as .js or .jsx
 - to place a component inside another file - use the component name tag
 (Important)

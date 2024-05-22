@@ -106,4 +106,27 @@ Style-css
 - inline
     -is given as objects
     -style = {{property1:value,property2:value}}
-- module 
+
+    -can also be done by creating the object under the function app and using that name inside the style attribute
+- module.css
+------------
+    -must create in src folder
+    -with extension as ".module.css"
+    -accessible throughout the application
+    -inorder to use this module in another file - we need to import the module
+    - multiple styles are given by  className={[mystyle.reactStyle,mystyle.style2].join(' ')}
+
+-A declared variable under JS Codes can be used using {}
+
+___________________________________________________________________________________
+
+22/05
+___________________________________________________________________________________
+
+Components
+----------
+Components are of two types:
+1, Functional Component (rfce) - React Functional Component Export
+    -functional - basic structure (Random.jsx)
+2, Class Component (rcc) - React Class Component
+    -class - basic structure (Example.jsx)

@@ -130,3 +130,54 @@ Components are of two types:
     -functional - basic structure (Random.jsx)
 2, Class Component (rcc) - React Class Component
     -class - basic structure (Example.jsx)
+
+___________________________________________________________________________________
+
+23/05
+___________________________________________________________________________________
+
+dataSharing: (IMP)
+-----------
+- using props - predefined object
+- key:value - enclosed in {}
+- data sharing between parent and child component (direction - parent -> child)
+
+
+Functional Component Data Sharing: Argument of the Function
+----------------------------------
+In App.js
+we shared it as -> Example sub={variableName}
+
+In Example.jsx
+Put the function arg as props
+Access data as props.sub
+
+Class Component Data Sharing: Constructor(){super(props)} 
+------------------------------
+In App.js
+we shared it as -> Random uname={variableName}
+
+In Random.jsx
+Create a Constructor(props){super(props)}
+
+
+Object Destructuring: (IMP)
+---------------------
+Instead of using props and getting all the data, you can use the key alone to get the particular data.
+In Example.jsx inside the Function give the arg in {age} and normally display it using {age}
+
+Event Handling:  (IMP)
+---------------
+1, Click Event:
+    1, Function with arguments
+        click = {()=>{functionName(arg)}} //shld be done as call back function
+    2, Function without arguments   
+        click = {functionName}
+
+        onChange = {(e)=>functionname(e)} -> for input types
+
+Conditional Rendering:
+----------------------
+1, Ternery Operation - condition?true:false
+    Used for checking React name in prining the condition in Example.jsx
+2, Truthy Operator  - condition && true

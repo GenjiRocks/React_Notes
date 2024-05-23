@@ -8,6 +8,7 @@ function App() {
   // JS codes
   const h1style = {color:'blue', backgroundColor:'black'}
   const username = 'Ashwin'
+  const subject = "React"
   return (
     // HTML Code
     <>
@@ -22,8 +23,10 @@ function App() {
       <h2>My user name is {username}</h2>
 
       <ul>
-        <li><Random/></li>
-        <li><Example/></li>
+        <li><Random uname={username}/></li>
+        <li><Example sub={subject} age={27}/></li>
+        
+        
       </ul>
     </>
   

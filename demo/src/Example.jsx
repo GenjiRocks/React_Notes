@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Example({age,sub}) {
+
+  // Calling Hooks
+  const [concept,setConcept] = useState("reactjs")
+  
+
   console.log(age,sub);
 
   // Button function without arg
@@ -33,6 +38,9 @@ function Example({age,sub}) {
       <div className='d-flex mt-4'>
         <input type="text" placeholder='Enter the text' className='form-control w-25' onChange={(e)=>getName(e)}/>
       </div>
+
+      <p>Hook value is : {concept}</p>
+      <button className='btn btn-danger' onClick={()=>{setConcept('Hook Changed')}}>Click</button>
 
     </>
    

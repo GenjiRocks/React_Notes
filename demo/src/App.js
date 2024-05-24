@@ -3,6 +3,7 @@ import './App.css';
 import mystyle from '../src/ashstyle.module.css'
 import Random from './Random';
 import Example from './Example'
+import User from './User';
 
 function App() {
   // JS codes
@@ -23,8 +24,10 @@ function App() {
       <h2>My user name is {username}</h2>
 
       <ul>
-        <li><Random uname={username}/></li>
-        <li><Example sub={subject} age={27}/></li>
+        {/* <li><Random uname={username}/></li>
+        <li><Example sub={subject} age={27}/></li> */}
+
+        <User/>
         
         
       </ul>

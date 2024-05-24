@@ -126,9 +126,9 @@ ________________________________________________________________________________
 Components
 ----------
 Components are of two types:
-1, Functional Component (rfce) - React Functional Component Export
+1, Functional Component (rfce) - React Functional Component Export / Stateless Component
     -functional - basic structure (Random.jsx)
-2, Class Component (rcc) - React Class Component
+2, Class Component (rcc) - React Class Component/ Statefull Component
     -class - basic structure (Example.jsx)
 
 ___________________________________________________________________________________
@@ -181,3 +181,69 @@ Conditional Rendering:
 1, Ternery Operation - condition?true:false
     Used for checking React name in prining the condition in Example.jsx
 2, Truthy Operator  - condition && true
+
+___________________________________________________________________________________
+
+24/05
+___________________________________________________________________________________
+
+State: (imp)
+------------
+    -By default works only in "class component"
+    -Object used to store property(values) of a REACT "class component".
+    -if the value in the state changes the whole components gets re-rendered
+
+    -where as variables store local data that does not effect the component re-rendered.
+
+    state = {property:value} inside Constructor for accessing {state.property}
+
+    -setState() - function to change value of a State
+
+(Important)
+Life cycle of React Class Component
+------------------------------------
+Three Phases:
+    1, Mounting Phase - creation of component
+        a, constructor() - to initialize the state
+        b, getDerivedStateFromProps() - used to modify state values using props
+                            -it returns an object to update the state or null to indicate no state updation
+        c, render() - Returns JSX that represents the component output
+        d, componentDidMount() - last method - network calls(API calls)/side effects
+
+    2, Updating Phase - updationg of the component
+        a, getDerivedStateFromProps()
+        b, shouldComponentUpdate()- method is invoked before rendering when a new props or state are the receipts. 
+            It returns true if the component should update else return false.
+        c, render()
+        d, getSnapShotBeforeUpdate()- method is called right before the changes from the virtual dom are to be reflected in the actual dom.
+        e, componentDidUpdate() - DOM Update
+
+    3, Unmounting Phase - Deletion of the component
+        a, componentWillUpdate()- cancels network calls and clean the DOM
+
+    4, Error Handling Phase
+        a, getDerivedStateFromError() - called when there is an error during the render
+        b, componentDidCatch() - called after an error being thrown
+
+
+HOOKS(imp)
+----------
+    -Rules to use Hooks:
+    --------------------
+
+        -it need to be imported in the functional component at the top of the file.
+        -can call hook at the top section of the function
+        -hooks cannot be called conditionally
+
+    -Functions:
+    - two types of HOOKS
+        1, Predefined HOOKS
+            a, useState() - to provide state to functional component
+                            - return state and function to change the state
+
+                            syntax
+                            ------
+                            const [state,functionname] = useState(initial value of state)
+        2, Custom HOOKS
+    
+

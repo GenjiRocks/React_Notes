@@ -249,5 +249,41 @@ HOOKS(imp)
 
 ___________________________________________________________________________________
 
-27/05
+28/05
 ___________________________________________________________________________________
+
+Vite Platform:
+----------------
+npm create vite@latest project_name
+
+In Package.json:
+Add "--open" to vite in dev:vite - so browser opens automatically
+
+Material UI (mui.com) and install for UI Components
+
+To get a value from Input Box: (IMP)
+onChange = (e)=>validate(e)
+
+___________________________________________________________________________________
+
+29/05
+___________________________________________________________________________________
+
+App.jsx important of SimpleInterest (VERY IMPORTANT)
+
+Regular Expression:
+-----------------
+Used to check the pattern of a given string
+
+Rules for Creating Regular Expressions:
+-----------------------------------
+1,should starts and ends with forward slash
+2, expression should starts with ^
+3, expression should ends with $
+4, constions are placed inside a square bracket
+
+eg. /^[0-9]*$/   -> * is added for the combination of 0-9
+
+match() - compare regular expression with string
+if match returns null then string does not match with regular expression
+!! to convert to boolean type

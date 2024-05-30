@@ -287,3 +287,14 @@ eg. /^[0-9]*$/   -> * is added for the combination of 0-9
 match() - compare regular expression with string
 if match returns null then string does not match with regular expression
 !! to convert to boolean type
+
+
+___________________________________________________________________________________
+
+30/05
+___________________________________________________________________________________
+
+Media Player:
+
+
+
